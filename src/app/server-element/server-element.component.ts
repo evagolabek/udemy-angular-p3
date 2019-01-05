@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ServerElementComponent implements OnInit {
   //type definition for a property that we want to use in our html 
   //input exposes this property to parent component or any component that is hosting our serverElement
-  @Input() element: {type: string, name: string, content: string};
+  @Input('srvElement') element: {type: string, name: string, content: string};
 
   constructor() { }
 
