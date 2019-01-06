@@ -1,9 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
   templateUrl: './server-element.component.html',
-  styleUrls: ['./server-element.component.css']
+  styleUrls: ['./server-element.component.css'],
+  //viewencapsulation-Emulated is default , None would make the css of this component being applied globally, Native uses shadow dom technology,for certain browsers only
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class ServerElementComponent implements OnInit {
   //type definition for a property that we want to use in our html 
