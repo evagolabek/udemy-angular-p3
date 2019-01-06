@@ -9,7 +9,7 @@ export class CockpitComponent implements OnInit {
   //properties created (to become an event with eventemiiter)
   //between <> you define what event data type you going to emit
   @Output()serverCreated = new EventEmitter<{ serverName: string, serverContent: string }>();
-  @Output()blueprintCreated = new EventEmitter<{serverName: string, serverContent: string }>();
+  @Output('bpCreated')blueprintCreated = new EventEmitter<{serverName: string, serverContent: string }>();
 
   newServerName = '';
   newServerContent = '';
